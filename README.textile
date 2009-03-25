@@ -1,0 +1,13 @@
+h2. exception_notification_parser
+
+The exception_notification_parser is a small Ruby gem to parse e-mail output of the Rails exception_notification plugin into a hash of data.
+
+    @data = ExceptionNotificationParser.parse(@exception_notification_text)
+    => {...}
+
+h3. Todo
+
+* Get some good test fixtures, (output from the exception_notification plugin)
+* Write specs to test the fixtures against the expected output hash.
+* Write a good robust parser for the default (unconfigured) exception_notification plugin. (You can re-arrange sections etc. if you do a bit of editing.)
+
